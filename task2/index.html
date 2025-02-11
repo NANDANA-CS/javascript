@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .todo-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .todo-container div{
+            display: flex;
+            flex-direction: row;
+        }
+        .todo-list {
+            list-style: none;
+            padding: 0;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .todo-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        #todoInput {
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        button {
+            background-color: rgb(36, 99, 200);
+            padding: 8px 10px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="todo-container">
+    
+    <div>
+        <input type="text" id="todoInput">
+        <button id="addButton">Add</button>
+    </div>
+    <ul class="todo-list" id="todoList"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
